@@ -25,7 +25,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->bind(
             'App\Domain\Repository\ItemRepository',
-            'App\Infrastructure\Eloquent\EloquentItemRepository'
+            'App\Infrastructure\Repository\Eloquent\EloquentItemRepository'
         );
     }
 }
